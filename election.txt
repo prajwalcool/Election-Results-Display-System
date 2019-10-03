@@ -1,0 +1,12 @@
+$AMU|BJP|MAHA|50
+$ayadev|JDS|Kolar|62
+$Ikil|JDS|Mandya|0
+$umalatha|IND|Pandya|50
+$Nikil|JDS|Mandya|0
+Nikil|JDS|Mandya|8
+Sadananda gowda|BJP|MAHALAKSHMI|120
+$evegowda|JDS|Hassan|142
+$umalatha|IND|Mandya|820
+Vijay|IND|Kolar|10
+Navin|BJP|Jayanagar|180
+$ratap Simha|BJP|Mysore|470Raju|C$ngress|BLR|640

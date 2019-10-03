@@ -1,0 +1,305 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\pass.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\pass.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 398, 193
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ELECTION RESULTS DISPLAY SYSTEM"
+FONT 14, "Calibri"
+BEGIN
+    EDITTEXT        IDC_EDITSEARCH,29,36,155,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Search",IDC_Search,200,36,50,14,BS_NOTIFY
+    PUSHBUTTON      "ADD",IDC_ADD,288,56,82,21,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "DELETE",IDC_DELETE,289,88,79,22,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "EXIT",IDCANCEL,290,121,80,22,0,WS_EX_DLGMODALFRAME
+    CONTROL         "List1",IDC_LISTVIEW,"SysListView32",LVS_REPORT | 
+                    LVS_SORTDESCENDING | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,24,61,244,122,WS_EX_DLGMODALFRAME
+    CTEXT           "ELECTION RESULTS DISPLAY SYSTEM",IDC_TITL,7,8,384,20,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Login",IDC_BUTTONLogin,299,146,50,14
+    PUSHBUTTON      "Logout",IDC_BUTTONLogout,298,146,50,14
+END
+
+IDD_UPDATE DIALOG DISCARDABLE  0, 0, 320, 136
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UPDATE"
+FONT 14, "Calibri"
+BEGIN
+    EDITTEXT        IDC_EDITConstituency,103,16,81,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPartyname,103,38,82,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCandidatename,103,60,84,16
+    EDITTEXT        IDC_EDITVotes,103,81,87,16,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Change",IDOK,66,104,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,143,104,50,14
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_HOTTRACK,189,80,7,
+                    17
+    LTEXT           "Constituency",IDC_STATIC,40,18,47,12
+    LTEXT           "Party Name",IDC_STATIC,39,40,47,12
+    LTEXT           "Candidate Name",IDC_Passphrase,39,62,57,9
+    CTEXT           "Votes",IDC_Votes,38,83,47,12
+END
+
+IDD_ADD DIALOGEX 0, 0, 376, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ADD"
+FONT 14, "Calibri"
+BEGIN
+    EDITTEXT        IDC_EDITCandidatename,181,40,84,16
+    EDITTEXT        IDC_EDITPartyname,181,61,82,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITConstituency,181,86,81,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVotes,181,109,87,16,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_HOTTRACK,267,108,7,
+                    17
+    DEFPUSHBUTTON   "ADD",IDD_ADD,155,130,56,16
+    PUSHBUTTON      "Cancel",IDCANCEL,237,130,52,16
+    LTEXT           "Candidate Name",IDC_Passphrase,104,43,51,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Party Name",IDC_STATIC,104,64,47,12,SS_CENTERIMAGE
+    LTEXT           "Constituency",IDC_STATIC,104,89,47,12,SS_CENTERIMAGE
+    LTEXT           "Votes",IDC_Votes,104,112,47,12,SS_CENTERIMAGE
+    LTEXT           ":",IDC_STATIC,158,42,8,8
+    LTEXT           ":",IDC_STATIC,158,92,8,8
+    LTEXT           ":",IDC_STATIC,158,111,8,8
+    LTEXT           ":",IDC_STATIC,158,65,8,8
+    CTEXT           "INSERT CANDIDATE RESULTS",IDC_TITLE,30,14,326,15,
+                    SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+END
+
+IDD_DELETE DIALOGEX 0, 0, 416, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete"
+FONT 14, "Calibri"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,359,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,359,24,50,14
+    CONTROL         "List1",IDC_LISTVIEW,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,96,54,244,111,
+                    WS_EX_DLGMODALFRAME
+    LISTBOX         IDC_LISTDELETE,17,54,65,111,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "CANDIDATE NAMES",IDC_STATICN,17,41,65,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "CANDIDATE RESULTS",IDC_STATICR,96,41,244,14,
+                    SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    CTEXT           "Select the candidate name to to delete",IDC_TITLE,107,
+                    18,185,17,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 207, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 14, "Calibri"
+BEGIN
+    EDITTEXT        IDC_EDITUsername,94,33,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPassword,94,50,73,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Login",IDOK,45,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,76,50,14
+    LTEXT           "Username",IDC_STATIC,47,33,33,8
+    LTEXT           "Password",IDC_STATIC,47,50,31,8
+    CTEXT           "Admin Login",IDC_TITLE,7,7,193,16,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "pass MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "pass\0"
+            VALUE "LegalCopyright", "Copyright (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "pass.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "pass Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DELETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\pass.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
